@@ -1,24 +1,15 @@
-
 using System;
-
-class Program
+class Program 
 {
-    static void Main()
-    {
-        string senha = "123";
-        int tentativas = 0;
-        while (tentativas < 3) 
+     static void Main() 
+     {
+        int[] numeros = new int[5];
+        for (int i = 0; i < 5; i++)
         {
-            Console.Write("Digite a senha: ");
-            string tentativa = Console.ReadLine();
-            if (tentativa == senha) 
-            {
-                Console.WriteLine("Acesso permitido!");
-                return;
-            }
-            tentativas++;
-            Console.WriteLine("Senha incorreta!");
-         }
-        Console.WriteLine("Número de tentativas excedido!"); 
+            Console.Write($"Digite o número {i + 1}: ");
+            numeros[i] = int.Parse(Console.ReadLine());
+        }
+        Array.Sort(numeros);
+        Console.WriteLine("Ordem crescente: " + string.Join(", ", numeros));
     }
 }
