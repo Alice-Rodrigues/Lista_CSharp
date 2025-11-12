@@ -1,7 +1,4 @@
-/******************************************************************************
-Números em Ordem Crescente Peça 5 números e mostre-os em ordem crescente. 
-Objetivo: uso de arrays e método Array.Sort().
-*******************************************************************************/
+
 using System;
 
 class Program
